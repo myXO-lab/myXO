@@ -8,7 +8,7 @@ The prototype for the myXO.fun website - A revolutionary smart technology gadget
 - **Responsive Design**: Optimized for all devices from mobile to desktop
 - **GitHub Pages Ready**: Automated deployment with GitHub Actions
 - **React 19**: Built with the latest React version
-- **Material UI v6**: Using the latest MUI components with MD3 support
+- **Material UI v7**: Using the latest MUI components with MD3 support
 
 ## 🛠️ Development
 
