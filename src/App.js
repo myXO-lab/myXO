@@ -176,7 +176,7 @@ function App() {
       >
         <Container maxWidth="lg">
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Stack spacing={3}>
                 <Chip 
                   label="🎉 Now Available" 
@@ -236,7 +236,7 @@ function App() {
                 </Stack>
               </Stack>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Box
                 sx={{
                   position: 'relative',
@@ -283,7 +283,7 @@ function App() {
         
         <Grid container spacing={4}>
           {features.map((feature, index) => (
-            <Grid item xs={12} sm={6} md={3} key={index}>
+            <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
               <Card 
                 sx={{ 
                   height: '100%',
@@ -375,12 +375,12 @@ function App() {
       >
         <Container maxWidth="lg">
           <Grid container spacing={2} alignItems="center">
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Typography variant="body2" sx={{ opacity: 0.9 }}>
                 © 2025 myXO. The prototype for the myXO.fun website.
               </Typography>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Stack 
                 direction="row" 
                 spacing={2} 
