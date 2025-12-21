@@ -237,29 +237,19 @@ function App() {
               </Stack>
             </Grid>
             <Grid size={{ xs: 12, md: 6 }}>
-              <Box
-                sx={{
-                  position: 'relative',
-                  height: { xs: 300, md: 400 },
-                  background: 'linear-gradient(135deg, #EADDFF 0%, #E8DEF8 100%)',
-                  borderRadius: 4,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  boxShadow: '0 20px 60px rgba(103, 80, 164, 0.3)',
-                }}
-              >
-                <Typography 
-                  variant="h2" 
-                  sx={{ 
-                    color: 'primary.main',
-                    fontWeight: 700,
-                    opacity: 0.5,
-                  }}
-                >
-                  myXO
-                </Typography>
-              </Box>
+  <Box
+    component="img"
+    src="/path/to/your/image.jpg" // replace with the actual path to image1
+    alt="Skier in vibrant neon colors carving down a slope"
+    sx={{
+      width: '100%',
+      height: { xs: 300, md: 400 },
+      borderRadius: 4,
+      objectFit: 'cover',
+      boxShadow: '0 20px 60px rgba(103, 80, 164, 0.3)',
+      display: 'block',
+    }}
+  />
             </Grid>
           </Grid>
         </Container>
