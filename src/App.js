@@ -1,0 +1,412 @@
+import React from 'react';
+import {
+  ThemeProvider,
+  createTheme,
+  CssBaseline,
+  AppBar,
+  Toolbar,
+  Typography,
+  Container,
+  Box,
+  Button,
+  Card,
+  CardContent,
+  Grid,
+  Chip,
+  Stack,
+  useMediaQuery,
+} from '@mui/material';
+import {
+  Devices,
+  Speed,
+  Security,
+  Cloud,
+  Email,
+  GitHub,
+} from '@mui/icons-material';
+
+// Material Design 3 theme
+const theme = createTheme({
+  palette: {
+    mode: 'light',
+    primary: {
+      main: '#6750A4',
+      light: '#EADDFF',
+      dark: '#21005D',
+    },
+    secondary: {
+      main: '#625B71',
+      light: '#E8DEF8',
+      dark: '#1D192B',
+    },
+    background: {
+      default: '#FFFBFE',
+      paper: '#FFFBFE',
+    },
+    surface: {
+      main: '#FEF7FF',
+    },
+  },
+  typography: {
+    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    h1: {
+      fontWeight: 600,
+      fontSize: '3.5rem',
+      letterSpacing: '-0.02em',
+    },
+    h2: {
+      fontWeight: 600,
+      fontSize: '2.5rem',
+      letterSpacing: '-0.01em',
+    },
+    h3: {
+      fontWeight: 500,
+      fontSize: '2rem',
+    },
+    h6: {
+      fontWeight: 500,
+    },
+  },
+  shape: {
+    borderRadius: 16,
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: 20,
+          textTransform: 'none',
+          fontWeight: 600,
+          padding: '10px 24px',
+        },
+      },
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          borderRadius: 16,
+          boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)',
+        },
+      },
+    },
+  },
+});
+
+function App() {
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
+  const features = [
+    {
+      icon: <Devices sx={{ fontSize: 48, color: 'primary.main' }} />,
+      title: 'Cross-Platform',
+      description: 'Works seamlessly across all your devices with perfect synchronization.',
+    },
+    {
+      icon: <Speed sx={{ fontSize: 48, color: 'primary.main' }} />,
+      title: 'Lightning Fast',
+      description: 'Experience blazing fast performance with optimized algorithms.',
+    },
+    {
+      icon: <Security sx={{ fontSize: 48, color: 'primary.main' }} />,
+      title: 'Secure by Design',
+      description: 'Your data is protected with enterprise-grade security.',
+    },
+    {
+      icon: <Cloud sx={{ fontSize: 48, color: 'primary.main' }} />,
+      title: 'Cloud Connected',
+      description: 'Access your data anywhere with automatic cloud backup.',
+    },
+  ];
+
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      
+      {/* AppBar */}
+      <AppBar 
+        position="sticky" 
+        elevation={0}
+        sx={{ 
+          backgroundColor: 'rgba(255, 251, 254, 0.9)',
+          backdropFilter: 'blur(10px)',
+          borderBottom: '1px solid rgba(103, 80, 164, 0.1)',
+        }}
+      >
+        <Toolbar>
+          <Typography 
+            variant="h6" 
+            component="div" 
+            sx={{ 
+              flexGrow: 1,
+              color: 'primary.main',
+              fontWeight: 700,
+            }}
+          >
+            myXO
+          </Typography>
+          <Button 
+            color="primary" 
+            variant="text"
+            sx={{ mr: 1 }}
+          >
+            Features
+          </Button>
+          <Button 
+            color="primary" 
+            variant="contained"
+            sx={{ 
+              background: 'linear-gradient(135deg, #6750A4 0%, #7965AF 100%)',
+              boxShadow: '0 4px 12px rgba(103, 80, 164, 0.3)',
+            }}
+          >
+            Get Started
+          </Button>
+        </Toolbar>
+      </AppBar>
+
+      {/* Hero Section */}
+      <Box
+        sx={{
+          background: 'linear-gradient(180deg, #FEF7FF 0%, #FFFBFE 100%)',
+          pt: { xs: 6, md: 12 },
+          pb: { xs: 8, md: 12 },
+          position: 'relative',
+          overflow: 'hidden',
+        }}
+      >
+        <Container maxWidth="lg">
+          <Grid container spacing={4} alignItems="center">
+            <Grid size={{ xs: 12, md: 6 }}>
+              <Stack spacing={3}>
+                <Chip 
+                  label="🎉 Now Available" 
+                  color="primary" 
+                  sx={{ 
+                    width: 'fit-content',
+                    fontWeight: 600,
+                    background: 'linear-gradient(135deg, #EADDFF 0%, #E8DEF8 100%)',
+                    color: 'primary.main',
+                  }}
+                />
+                <Typography 
+                  variant={isMobile ? 'h3' : 'h1'} 
+                  component="h1"
+                  sx={{
+                    color: 'primary.dark',
+                    lineHeight: 1.2,
+                  }}
+                >
+                  The Future of
+                  <Box component="span" sx={{ color: 'primary.main', display: 'block' }}>
+                    Smart Technology
+                  </Box>
+                </Typography>
+                <Typography 
+                  variant="h6" 
+                  color="text.secondary"
+                  sx={{ lineHeight: 1.6 }}
+                >
+                  Introducing myXO - a revolutionary gadget that combines cutting-edge technology 
+                  with elegant design to transform the way you interact with your digital world.
+                </Typography>
+                <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
+                  <Button 
+                    variant="contained" 
+                    size="large"
+                    sx={{ 
+                      background: 'linear-gradient(135deg, #6750A4 0%, #7965AF 100%)',
+                      boxShadow: '0 8px 24px rgba(103, 80, 164, 0.4)',
+                      '&:hover': {
+                        boxShadow: '0 12px 32px rgba(103, 80, 164, 0.5)',
+                      },
+                    }}
+                  >
+                    Discover More
+                  </Button>
+                  <Button 
+                    variant="outlined" 
+                    size="large"
+                    sx={{ 
+                      borderColor: 'primary.main',
+                      color: 'primary.main',
+                    }}
+                  >
+                    Watch Demo
+                  </Button>
+                </Stack>
+              </Stack>
+            </Grid>
+            <Grid size={{ xs: 12, md: 6 }}>
+              <Box
+                sx={{
+                  position: 'relative',
+                  height: { xs: 300, md: 400 },
+                  background: 'linear-gradient(135deg, #EADDFF 0%, #E8DEF8 100%)',
+                  borderRadius: 4,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  boxShadow: '0 20px 60px rgba(103, 80, 164, 0.3)',
+                }}
+              >
+                <Typography 
+                  variant="h2" 
+                  sx={{ 
+                    color: 'primary.main',
+                    fontWeight: 700,
+                    opacity: 0.5,
+                  }}
+                >
+                  myXO
+                </Typography>
+              </Box>
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
+
+      {/* Features Section */}
+      <Container maxWidth="lg" sx={{ py: { xs: 8, md: 12 } }}>
+        <Box textAlign="center" mb={6}>
+          <Typography 
+            variant={isMobile ? 'h4' : 'h2'} 
+            component="h2" 
+            gutterBottom
+            sx={{ color: 'primary.dark', fontWeight: 600 }}
+          >
+            Why Choose myXO?
+          </Typography>
+          <Typography variant="h6" color="text.secondary">
+            Packed with features designed for the modern user
+          </Typography>
+        </Box>
+        
+        <Grid container spacing={4}>
+          {features.map((feature, index) => (
+            <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
+              <Card 
+                sx={{ 
+                  height: '100%',
+                  transition: 'all 0.3s ease',
+                  '&:hover': {
+                    transform: 'translateY(-8px)',
+                    boxShadow: '0 12px 24px rgba(103, 80, 164, 0.2)',
+                  },
+                }}
+              >
+                <CardContent sx={{ textAlign: 'center', p: 4 }}>
+                  <Box mb={2}>{feature.icon}</Box>
+                  <Typography variant="h6" component="h3" gutterBottom>
+                    {feature.title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {feature.description}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+
+      {/* CTA Section */}
+      <Box
+        sx={{
+          background: 'linear-gradient(135deg, #6750A4 0%, #7965AF 100%)',
+          py: { xs: 8, md: 10 },
+          color: 'white',
+        }}
+      >
+        <Container maxWidth="md" sx={{ textAlign: 'center' }}>
+          <Typography 
+            variant={isMobile ? 'h4' : 'h2'} 
+            component="h2" 
+            gutterBottom
+            sx={{ fontWeight: 600 }}
+          >
+            Ready to Experience myXO?
+          </Typography>
+          <Typography variant="h6" sx={{ mb: 4, opacity: 0.9 }}>
+            Join thousands of early adopters who are already transforming their digital experience.
+          </Typography>
+          <Stack 
+            direction={{ xs: 'column', sm: 'row' }} 
+            spacing={2}
+            justifyContent="center"
+          >
+            <Button 
+              variant="contained" 
+              size="large"
+              sx={{ 
+                backgroundColor: 'white',
+                color: 'primary.main',
+                '&:hover': {
+                  backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                },
+              }}
+            >
+              Pre-Order Now
+            </Button>
+            <Button 
+              variant="outlined" 
+              size="large"
+              sx={{ 
+                borderColor: 'white',
+                color: 'white',
+                '&:hover': {
+                  borderColor: 'white',
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                },
+              }}
+            >
+              Learn More
+            </Button>
+          </Stack>
+        </Container>
+      </Box>
+
+      {/* Footer */}
+      <Box
+        sx={{
+          backgroundColor: 'primary.dark',
+          color: 'white',
+          py: 4,
+        }}
+      >
+        <Container maxWidth="lg">
+          <Grid container spacing={2} alignItems="center">
+            <Grid size={{ xs: 12, md: 6 }}>
+              <Typography variant="body2" sx={{ opacity: 0.9 }}>
+                © 2025 myXO. The prototype for the myXO.fun website.
+              </Typography>
+            </Grid>
+            <Grid size={{ xs: 12, md: 6 }}>
+              <Stack 
+                direction="row" 
+                spacing={2} 
+                justifyContent={{ xs: 'flex-start', md: 'flex-end' }}
+              >
+                <Button 
+                  startIcon={<Email />} 
+                  sx={{ color: 'white', textTransform: 'none' }}
+                >
+                  Contact
+                </Button>
+                <Button 
+                  startIcon={<GitHub />} 
+                  sx={{ color: 'white', textTransform: 'none' }}
+                  href="https://github.com/myXO-lab/myXO"
+                  target="_blank"
+                >
+                  GitHub
+                </Button>
+              </Stack>
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
+    </ThemeProvider>
+  );
+}
+
+export default App;
