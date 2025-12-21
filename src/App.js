@@ -239,7 +239,7 @@ function App() {
             <Grid size={{ xs: 12, md: 6 }}>
               <Box
                 component="img"
-                src="image.jpg" // replace with the actual path to image1
+                src="src/image.jpg" // replace with the actual path to image1
                 alt="Skier in vibrant neon colors carving down a slope"
                 sx={{
                   width: '100%',
