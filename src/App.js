@@ -24,6 +24,7 @@ import {
   Email,
   GitHub,
 } from '@mui/icons-material';
+import icebeeImage from './icebee.jpg';
 
 // Material Design 3 theme
 const theme = createTheme({
@@ -239,8 +240,8 @@ function App() {
             <Grid size={{ xs: 12, md: 6 }}>
               <Box
                 component="img"
-                src="src/image.jpg" // replace with the actual path to image1
-                alt="Skier in vibrant neon colors carving down a slope"
+                src={icebeeImage}
+                alt="myXO"
                 sx={{
                   width: '100%',
                   height: { xs: 300, md: 400 },
