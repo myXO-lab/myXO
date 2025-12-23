@@ -264,10 +264,10 @@ function App() {
             gutterBottom
             sx={{ color: 'primary.dark', fontWeight: 600 }}
           >
-            Why Choose myXO?
+            Velocity with a Vow.
           </Typography>
           <Typography variant="h6" color="text.secondary">
-            Packed with features designed for the modern user
+            We believe the fastest tech on earth should be at the service of the people who need it most. The minibee ICEBREAKERS are launching their first field trials to tackle the "Cold Crisis" and "Deep-Woods Debris."
           </Typography>
         </Box>
         
