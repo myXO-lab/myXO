@@ -150,7 +150,7 @@ function App() {
             variant="text"
             sx={{ mr: 1 }}
           >
-            Features
+            Foundational Partners
           </Button>
           <Button 
             color="primary" 
@@ -160,7 +160,7 @@ function App() {
               boxShadow: '0 4px 12px rgba(103, 80, 164, 0.3)',
             }}
           >
-            Get Started
+            Test Pilots
           </Button>
         </Toolbar>
       </AppBar>
@@ -207,7 +207,7 @@ function App() {
                   color="text.secondary"
                   sx={{ lineHeight: 1.6 }}
                 >
-                  The [Project Name] Prototype: Engineering the highest power-to-weight ratio in the history of winter mobility. We don't just move through the forest; we accelerate through it.
+                  The minibee ICEBREAKER prototype: Engineering the highest power-to-weight ratio in the history of winter mobility. We don't just move through the forest; we accelerate through it.
                 </Typography>
                 <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
                   <Button 
@@ -221,7 +221,7 @@ function App() {
                       },
                     }}
                   >
-                    Discover More
+                    Let's Chat!
                   </Button>
                   <Button 
                     variant="outlined" 
@@ -231,7 +231,7 @@ function App() {
                       color: 'primary.main',
                     }}
                   >
-                    Watch Demo
+                    Buy me a coffee :)
                   </Button>
                 </Stack>
               </Stack>
