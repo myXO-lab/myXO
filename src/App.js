@@ -180,7 +180,7 @@ function App() {
             <Grid size={{ xs: 12, md: 6 }}>
               <Stack spacing={3}>
                 <Chip 
-                  label="🎉 Coming Soon" 
+                  label="🎉 Now Available" 
                   color="primary" 
                   sx={{ 
                     width: 'fit-content',
