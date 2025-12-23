@@ -197,9 +197,9 @@ function App() {
                     lineHeight: 1.2,
                   }}
                 >
-                  The Future of
+                  Velocity Unleashed.
                   <Box component="span" sx={{ color: 'primary.main', display: 'block' }}>
-                    Smart Technology
+                     Terrain Conquered.
                   </Box>
                 </Typography>
                 <Typography 
