@@ -197,7 +197,7 @@ function App() {
                     lineHeight: 1.2,
                   }}
                 >
-                  Velocity Unleashed.
+                  Fur Trade Unleashed.
                   <Box component="span" sx={{ color: 'primary.main', display: 'block' }}>
                      Terrain Conquered.
                   </Box>
