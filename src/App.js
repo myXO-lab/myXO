@@ -163,7 +163,7 @@ function App() {
               fontWeight: 700,
             }}
           >
-            myXO
+            🍁 myXO
           </Typography>
           <Button 
             color="primary" 
@@ -200,12 +200,12 @@ function App() {
             <Grid size={{ xs: 12, md: 6 }}>
               <Stack spacing={3}>
                 <Chip 
-                  label="Coming Soon" 
+                  label="🍁 Proudly Canadian" 
                   color="primary" 
                   sx={{ 
                     width: 'fit-content',
                     fontWeight: 600,
-                    background: 'linear-gradient(135deg, #FEE440 0%, #00FFC5 100%)',
+                    background: 'linear-gradient(135deg, #FF0000 0%, #FFFFFF 100%)',
                     color: '#000',
                   }}
                 />
@@ -217,9 +217,9 @@ function App() {
                     lineHeight: 1.2,
                   }}
                 >
-                  Fur Trade Unleashed.
+                  🍁 Fur Trade Unleashed.
                   <Box component="span" sx={{ color: 'info.main', display: 'block' }}>
-                     Terrain Conquered.
+                     Canadian Terrain Conquered.
                   </Box>
                 </Typography>
                 <Typography 
@@ -227,7 +227,7 @@ function App() {
                   color="text.secondary"
                   sx={{ lineHeight: 1.6 }}
                 >
-                  The minibee ICEBREAKERS prototype: Engineering the coolest feats in the history of winter mobility. We don't just move through the forest; we accelerate through it.
+                  The minibee ICEBREAKERS prototype: Proudly engineered in Canada 🇨🇦, conquering the toughest winter terrain. We don't just move through Canadian forests; we accelerate through them, eh!
                 </Typography>
                 <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
                   <Button 
@@ -285,10 +285,10 @@ function App() {
             gutterBottom
             sx={{ color: 'primary.dark', fontWeight: 600 }}
           >
-            Velocity with a Vow.
+            🍁 Velocity with a Vow.
           </Typography>
           <Typography variant="h6" color="text.secondary">
-            By focusing on Homelessness and Environmental Cleanup, myXO is taking the high-octane energy of an extreme sport and weaponizing it for extreme social good
+            By focusing on Homelessness and Environmental Cleanup, myXO is taking the high-octane energy of an extreme Canadian sport and weaponizing it for extreme social good. True North, strong and free! 🇨🇦
           </Typography>
         </Box>
         
@@ -335,10 +335,10 @@ function App() {
             gutterBottom
             sx={{ fontWeight: 600 }}
           >
-            Ready to Experience myXO?
+            🍁 Ready to Experience Canadian Excellence?
           </Typography>
           <Typography variant="h6" sx={{ mb: 4, opacity: 0.9 }}>
-            Join thousands of early adopters who are already transforming their digital experience.
+            Join thousands of proud Canadians and early adopters who are already transforming their winter experience. Made in Canada, with love! 🇨🇦
           </Typography>
           <Stack 
             direction={{ xs: 'column', sm: 'row' }} 
@@ -390,7 +390,7 @@ function App() {
           <Grid container spacing={2} alignItems="center">
             <Grid size={{ xs: 12, md: 6 }}>
               <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                © 2025 myXO. The prototype for the myXO.fun website.
+                © 2025 myXO 🍁 Proudly Canadian. The prototype for the myXO.fun website. Made with ❤️ in Canada 🇨🇦
               </Typography>
             </Grid>
             <Grid size={{ xs: 12, md: 6 }}>
