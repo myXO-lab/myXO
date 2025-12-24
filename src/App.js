@@ -26,26 +26,46 @@ import {
 } from '@mui/icons-material';
 import icebeeImage from './icebee.jpg';
 
-// Material Design 3 theme
+// Material Design 3 theme with custom color palette
 const theme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#6750A4',
-      light: '#EADDFF',
-      dark: '#21005D',
+      main: '#FA8072', // Salmon
+      light: '#FFC4BA',
+      dark: '#C85048',
+      contrastText: '#fff',
     },
     secondary: {
-      main: '#625B71',
-      light: '#E8DEF8',
-      dark: '#1D192B',
+      main: '#AA7DCE', // Purple
+      light: '#D4B3ED',
+      dark: '#7A4D9E',
+      contrastText: '#fff',
+    },
+    tertiary: {
+      main: '#FEE440', // Yellow
+      light: '#FFF0A0',
+      dark: '#CCB633',
+      contrastText: '#000',
+    },
+    info: {
+      main: '#00BBF9', // Bright Blue
+      light: '#66D8FC',
+      dark: '#0095C7',
+      contrastText: '#fff',
+    },
+    success: {
+      main: '#00FFC5', // Mint
+      light: '#66FFD8',
+      dark: '#00CC9E',
+      contrastText: '#000',
     },
     background: {
       default: '#FFFBFE',
-      paper: '#FFFBFE',
+      paper: '#FEFEFE',
     },
     surface: {
-      main: '#FEF7FF',
+      main: '#FFF9FB',
     },
   },
   typography: {
@@ -128,9 +148,9 @@ function App() {
         position="sticky" 
         elevation={0}
         sx={{ 
-          backgroundColor: 'rgba(255, 251, 254, 0.9)',
+          backgroundColor: 'rgba(255, 251, 254, 0.95)',
           backdropFilter: 'blur(10px)',
-          borderBottom: '1px solid rgba(103, 80, 164, 0.1)',
+          borderBottom: '1px solid rgba(250, 128, 114, 0.2)',
         }}
       >
         <Toolbar>
@@ -156,8 +176,8 @@ function App() {
             color="primary" 
             variant="contained"
             sx={{ 
-              background: 'linear-gradient(135deg, #6750A4 0%, #7965AF 100%)',
-              boxShadow: '0 4px 12px rgba(103, 80, 164, 0.3)',
+              background: 'linear-gradient(135deg, #FA8072 0%, #AA7DCE 100%)',
+              boxShadow: '0 4px 12px rgba(250, 128, 114, 0.4)',
             }}
           >
             Test Pilots
@@ -168,7 +188,7 @@ function App() {
       {/* Hero Section */}
       <Box
         sx={{
-          background: 'linear-gradient(180deg, #FEF7FF 0%, #FFFBFE 100%)',
+          background: 'linear-gradient(180deg, #FFF9FB 0%, #FFFBFE 50%, #F0FCFF 100%)',
           pt: { xs: 6, md: 12 },
           pb: { xs: 8, md: 12 },
           position: 'relative',
@@ -185,8 +205,8 @@ function App() {
                   sx={{ 
                     width: 'fit-content',
                     fontWeight: 600,
-                    background: 'linear-gradient(135deg, #EADDFF 0%, #E8DEF8 100%)',
-                    color: 'primary.main',
+                    background: 'linear-gradient(135deg, #FEE440 0%, #00FFC5 100%)',
+                    color: '#000',
                   }}
                 />
                 <Typography 
@@ -198,7 +218,7 @@ function App() {
                   }}
                 >
                   Fur Trade Unleashed.
-                  <Box component="span" sx={{ color: 'primary.main', display: 'block' }}>
+                  <Box component="span" sx={{ color: 'info.main', display: 'block' }}>
                      Terrain Conquered.
                   </Box>
                 </Typography>
@@ -214,10 +234,11 @@ function App() {
                     variant="contained" 
                     size="large"
                     sx={{ 
-                      background: 'linear-gradient(135deg, #6750A4 0%, #7965AF 100%)',
-                      boxShadow: '0 8px 24px rgba(103, 80, 164, 0.4)',
+                      background: 'linear-gradient(135deg, #00BBF9 0%, #00FFC5 100%)',
+                      color: '#000',
+                      boxShadow: '0 8px 24px rgba(0, 187, 249, 0.4)',
                       '&:hover': {
-                        boxShadow: '0 12px 32px rgba(103, 80, 164, 0.5)',
+                        boxShadow: '0 12px 32px rgba(0, 187, 249, 0.5)',
                       },
                     }}
                   >
@@ -246,7 +267,7 @@ function App() {
                   height: { xs: 300, md: 400 },
                   borderRadius: 4,
                   objectFit: 'cover',
-                  boxShadow: '0 20px 60px rgba(103, 80, 164, 0.3)',
+                  boxShadow: '0 20px 60px rgba(250, 128, 114, 0.3)',
                   display: 'block',
                 }}
               />
@@ -280,7 +301,7 @@ function App() {
                   transition: 'all 0.3s ease',
                   '&:hover': {
                     transform: 'translateY(-8px)',
-                    boxShadow: '0 12px 24px rgba(103, 80, 164, 0.2)',
+                    boxShadow: '0 12px 24px rgba(170, 125, 206, 0.25)',
                   },
                 }}
               >
@@ -302,7 +323,7 @@ function App() {
       {/* CTA Section */}
       <Box
         sx={{
-          background: 'linear-gradient(135deg, #6750A4 0%, #7965AF 100%)',
+          background: 'linear-gradient(135deg, #FA8072 0%, #AA7DCE 50%, #00BBF9 100%)',
           py: { xs: 8, md: 10 },
           color: 'white',
         }}
@@ -330,8 +351,10 @@ function App() {
               sx={{ 
                 backgroundColor: 'white',
                 color: 'primary.main',
+                fontWeight: 600,
                 '&:hover': {
-                  backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                  backgroundColor: '#FEE440',
+                  color: '#000',
                 },
               }}
             >
@@ -358,7 +381,7 @@ function App() {
       {/* Footer */}
       <Box
         sx={{
-          backgroundColor: 'primary.dark',
+          backgroundColor: '#1A1A2E',
           color: 'white',
           py: 4,
         }}
