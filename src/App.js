@@ -170,7 +170,7 @@ function App() {
             variant="text"
             sx={{ mr: 1 }}
           >
-            Foundational Partners
+            Partners
           </Button>
           <Button 
             color="primary" 
