@@ -288,7 +288,7 @@ function App() {
             Velocity with a Vow.
           </Typography>
           <Typography variant="h6" color="text.secondary">
-            We believe the fastest tech on earth should be at the service of the people who need it most. The minibee ICEBREAKERS are launching their first field trials to tackle the "Cold Crisis" and "Deep-Woods Debris."
+            By focusing on Homelessness and Environmental Cleanup, myXO is taking the high-octane energy of an extreme sport and weaponizing it for extreme social good
           </Typography>
         </Box>
         
