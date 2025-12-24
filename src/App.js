@@ -227,7 +227,7 @@ function App() {
                   color="text.secondary"
                   sx={{ lineHeight: 1.6 }}
                 >
-                  The minibee ICEBREAKERS prototype: Engineering the highest power-to-weight ratio in the history of winter mobility. We don't just move through the forest; we accelerate through it.
+                  The minibee ICEBREAKERS prototype: Engineering the coolest feats in the history of winter mobility. We don't just move through the forest; we accelerate through it.
                 </Typography>
                 <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
                   <Button 
