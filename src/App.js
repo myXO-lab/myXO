@@ -24,7 +24,7 @@ import {
   Email,
   GitHub,
 } from '@mui/icons-material';
-import icebeeImage from './icebee.jpg';
+import icebeeImage from './icebee.png';
 
 // Material Design 3 theme with custom color palette
 const theme = createTheme({
