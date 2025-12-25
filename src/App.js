@@ -119,23 +119,23 @@ function App() {
   const features = [
     {
       icon: <Devices sx={{ fontSize: 48, color: 'primary.main' }} />,
-      title: 'Cross-Platform',
-      description: 'Works seamlessly across all your devices with perfect synchronization.',
+      title: 'It’s not just a toy',
+      description: 'Applied Physics for the Uncharted',
     },
     {
       icon: <Speed sx={{ fontSize: 48, color: 'primary.main' }} />,
       title: 'Lightning Fast',
-      description: 'Experience blazing fast performance with optimized algorithms.',
+      description: 'Experience blazing fast performance with optimized distribution.',
     },
     {
       icon: <Security sx={{ fontSize: 48, color: 'primary.main' }} />,
-      title: 'Secure by Design',
-      description: 'Your data is protected with enterprise-grade security.',
+      title: 'What a Beast',
+      description: 'it’s a high-torque mobility platform',
     },
     {
       icon: <Cloud sx={{ fontSize: 48, color: 'primary.main' }} />,
-      title: 'Cloud Connected',
-      description: 'Access your data anywhere with automatic cloud backup.',
+      title: 'Watch me go',
+      description: 'View the highlight reel of the ICEBREAKERS in action.',
     },
   ];
 
