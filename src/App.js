@@ -288,7 +288,7 @@ function App() {
             Velocity with a Vow.
           </Typography>
           <Typography variant="h6" color="text.secondary">
-            By focusing on Homelessness and Environmental Cleanup, myXO is taking the high-octane energy of an extreme sport and carving it into an intiative for extreme social good
+            By focusing on accessibility to essentials, myXO is carving the energy of an extreme sport into an initiative for extreme social good
           </Typography>
         </Box>
         
